@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = StyleGuide::VERSION
   s.authors     = ["Joshua Schultz"]
   s.email       = ["me@joshuaschultz.com"]
-  s.homepage    = ""
+  s.homepage    = "http://quiet-citadel-4316.herokuapp.com/style_guides/index"
   s.summary     = "Rails-based Style Guide Plugin"
-  s.description = "Style_Guide_Boilerplate is a plugin used to append an automated boilerplate resource to your rails app allowing you to see/show your style guide. This work is largely based off of the idea initiated at https://github.com/bjankord/Style-Guide-Boilerplate"
+  s.description = "Style_Guide is a plugin used to append an automated boilerplate resource to your rails app allowing you to see/show your style guide. This work is largely based off of the idea initiated at https://github.com/bjankord/Style-Guide-Boilerplate"
   s.license     = "MIT"
   
   s.files         = `git ls-files -z`.split("\x0")
