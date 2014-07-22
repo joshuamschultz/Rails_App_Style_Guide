@@ -1,6 +1,6 @@
  <div id="top" class="sg-header sg-container">
    <h1 class="sg-logo">STYLE GUIDE <span>BOILERPLATE</span></h1>
-   <form id="js-sg-nav" action=""  method="post" class="sg-nav">
+   <!-- <form id="js-sg-nav" action=""  method="post" class="sg-nav">
      <select id="js-sg-section-switcher" class="sg-section-switcher" name="sg_section_switcher">
          <option value="">Jump To Section:</option>
          <optgroup label="Intro">
@@ -10,18 +10,18 @@
          </optgroup>
          <optgroup label="Base Styles">
            <%= @basefiles.each do |file| %>
-           <option value="<%=filename(file) %>"><%=filename(file) %></option>
+           <option value="#<%=filename(file) %>"><%= filename(file)%></option>
            <% end %>
          </optgroup>
          <optgroup label="Pattern Styles">
            <%= @patternfiles.each do |file| %>
-           <option value="<%=filename(file) %>"><%=filename(file) %></option>
+           <option value="#<%=filename(file) %>"><%=filename(file) %></option>
            <% end %>
          </optgroup>
      </select>
      <input type="hidden" name="sg_uri" value= "">
      <button type="submit" class="sg-submit-btn">Go</button>
-   </form><!--/.sg-nav-->
+   </form><!--/.sg-nav--> -->
  </div><!--/.sg-header-->
 
  <div class="sg-body sg-container">
