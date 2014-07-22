@@ -7,19 +7,19 @@
   
   <!-- Style Guide Boilerplate Styles And Scripts -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag    'style_guides', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'style_guide/style_guides', media: 'all', 'data-turbolinks-track' => true %>
   
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
   <!-- Replace below stylesheet with your own stylesheet -->
-  <%= stylesheet_link_tag    'style', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'style_guide/style', media: 'all', 'data-turbolinks-track' => true %>
 </head>
 <body>
     
 <%= yield %>
 
 </body>
-  <%= javascript_include_tag 'style_guides_plugins', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'style_guides', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'style_guide/style_guides_plugins', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'style_guide/style_guides', 'data-turbolinks-track' => true %>
 </html>
  
