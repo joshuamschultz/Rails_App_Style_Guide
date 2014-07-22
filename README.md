@@ -1,4 +1,4 @@
-Style-Guide-Boilerplate v0.0.1
+Style-Guide-Boilerplate v0.1.2
 ==============================
 
 A starting point for crafting living style guides.
@@ -12,8 +12,11 @@ A starting point for crafting living style guides.
 ## Getting Started With Style Guide Boilerplate
 
 ### Download the Style Guide Boilerplate
-Include 
-gem 'style_guide', :git => 'git://github.com/JoshuaMSchultz/Rails_App_Style_Guide'
+insert the following into gemspec  
+`gem 'style_guide'`   
+
+run the following in your bash  
+`rake generate style`
 
 ### Hook up your own CSS into the style guide
 In the `<head>` in the style_guide_layout.html.erb are custom styles for the boilerplate itself. These have all been prefixed with sg- so they hopefully shouldn't cause any conflicts with your website's own styles.
@@ -27,7 +30,7 @@ The last step is creating your sites custom patterns/modules.
 ### Create custom patterns
 To create custom patterns like buttons, breadcrumbs, alert messages, etc., create a new .html file and add your HTML markup into the file.
 
-Save the file as `pattern-name.html` into the `markup/patterns` directory inside of your `style-guide` directory.
+Save the file as `pattern-name.html` into the `markup/patterns` directory inside of your `lib/assets/style-guide` directory.
 
 You should now be able to see the new patterns at `yoursite.com/style-guide/`
 
@@ -82,10 +85,9 @@ If you come across any bugs, or have any other issues with the boilerplate, plea
 
 ## Credit
 Thanks to: 
+Brett Jankord for doing the initial [Leg work](https://github.com/bjankord/Style-Guide-Boilerplate).
 
 Jeremy Keith for letting me build on top of [Pattern Primer](https://github.com/adactio/Pattern-Primer).
 
 ## Licensing 
 **Style Guide Boilerplate** is licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License)
-
-Use it, build upon it, make awesome shit with it.

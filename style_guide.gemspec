@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = StyleGuide::VERSION
   s.authors     = ["Joshua Schultz"]
   s.email       = ["me@joshuaschultz.com"]
-  s.homepage    = "http://quiet-citadel-4316.herokuapp.com/style_guides/index"
+  s.homepage    = "https://github.com/JoshuaMSchultz/Rails_App_Style_Guide"
   s.summary     = "Rails-based Style Guide Plugin"
-  s.description = "Style_Guide is a plugin used to append an automated boilerplate resource to your rails app allowing you to see/show your style guide. This work is largely based off of the idea initiated at https://github.com/bjankord/Style-Guide-Boilerplate"
+  s.description = "Used create a living style guide at yoursite.com/style_guide"
   s.license     = "MIT"
   
   s.files         = `git ls-files -z`.split("\x0")
@@ -20,6 +20,6 @@ Gem::Specification.new do |s|
 
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.1.4"
+  s.add_dependency "rails", '~> 4.0'
 
 end
