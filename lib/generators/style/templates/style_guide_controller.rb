@@ -1,7 +1,7 @@
 module StyleGuide
     class StyleGuideController < ApplicationController
     layout 'style_guide/style_guide.html.erb'
-    inlcude StyleGuideHelper
+    include StyleGuideHelper
 
       def index
         @basefiles = []   
