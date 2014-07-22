@@ -11,18 +11,18 @@ module StyleGuideHelper
   end
   
   def base_docs file
-    File.read("../../lib/assets/style_guide/doc/base/#{file}")
+    File.read(StyleGuide::Engine.instance.root.join("lib/assets/style_guide/doc/base/#{file}"))
   end
   
   def base_markup file
-    File.read("../../lib/assets/style_guide/markup/base/#{file}")
+    File.read(StyleGuide::Engine.instance.root.join("lib/assets/style_guide/markup/base/#{file}"))
   end
   
   def pattern_docs file
-    File.read("../../lib/assets/style_guide/doc/patterns/#{file}")
+    File.read(StyleGuide::Engine.instance.root.join("lib/assets/style_guide/doc/patterns/#{file}"))
   end
   
   def pattern_markup file
-    File.read("../../lib/assets/style_guide/markup/patterns/#{file}")
+    File.read(StyleGuide::Engine.instance.root.join("lib/assets/style_guide/markup/patterns/#{file}"))
   end
 end

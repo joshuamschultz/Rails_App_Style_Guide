@@ -3,14 +3,14 @@ class StyleGuideController < ApplicationController
   include StyleGuideHelper
 
   def index
-    
     @basefiles = []   
     @patternfiles = []
-    Dir.foreach("../../lib/assets/style_guide/markup/base") do |file|
+    Dir.foreach(StyleGuide::Engine.instance.root.join("lib/assets/style_guide/markup/base")) do |file|
       @basefiles << file if File.extname("#{file}") == ".html"
     end
-    Dir.foreach("../../lib/assets/style_guide/markup/patterns") do |file|
+    Dir.foreach(StyleGuide::Engine.instance.root.join("lib/assets/style_guide/markup/patterns")) do |file|
       @patternfiles << file if File.extname("#{file}") == ".html"
     end
   end
 end
+

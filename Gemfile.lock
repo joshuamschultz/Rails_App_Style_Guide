@@ -3,6 +3,7 @@ PATH
   specs:
     style_guide (0.0.1)
       rails (~> 4.1.4)
+      sqlite3
 
 GEM
   remote: https://rubygems.org/
@@ -88,5 +89,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  sqlite3
   style_guide!

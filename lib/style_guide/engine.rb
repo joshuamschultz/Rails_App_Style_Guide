@@ -6,5 +6,6 @@ module StyleGuide
       app.config.assets.precompile += %w( style_guides.js )
       app.config.assets.precompile += %w( style_guides_plugins.js )
     end
+    
   end
 end
